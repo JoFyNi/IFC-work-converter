@@ -1,3 +1,5 @@
+import java.io.*;
+
 public class IFC {
     double x;
     double y;
@@ -7,5 +9,11 @@ public class IFC {
         this.x = x;
         this.y = y;
         this.z = z;
+    }
+
+    public void analyze() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("testFile.txt")));
+        reader.readLine();
+        reader.close();
     }
 }

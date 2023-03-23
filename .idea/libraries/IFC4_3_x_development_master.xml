@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="IFC4.3.x-development-master">
+    <CLASSES />
+    <JAVADOC />
+    <NATIVE>
+      <root url="jar://$USER_HOME$/Downloads/IFC4.3.x-development-master.zip!/" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
