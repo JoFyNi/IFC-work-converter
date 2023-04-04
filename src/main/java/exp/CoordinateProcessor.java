@@ -1,10 +1,9 @@
+package exp;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import com.esri.core.geometry.Geometry;
-import com.esri.core.geometry.MultiPoint;
-import com.esri.core.geometry.Polygon;
 //import org.locationtech.jts.geom.Coordinate;
 //import org.locationtech.jts.geom.Geometry;
 //import org.locationtech.jts.geom.GeometryFactory;
@@ -39,7 +38,7 @@ public class CoordinateProcessor {
                 if (compareAngles <= 0 && angle > prevAngle) {
                     if (compareAngles < 0 || dist > maxDist) {
                         /*
-                         * found a better Point. It either has a smaller angle, or if it's collinear, then it's further way
+                         * found a better v1.Point. It either has a smaller angle, or if it's collinear, then it's further way
                          */
                         minAngle = angle;
                         maxDist = dist;
@@ -137,7 +136,7 @@ public class CoordinateProcessor {
         //coordinates.add(new Coordinate(1, 0));
         //coordinates.add(new Coordinate(0.5, 0.5));
 
-        //double volume = CoordinateProcessor.calculateVolume(coordinates);
+        //double volume = v1.CoordinateProcessor.calculateVolume(coordinates);
         //System.out.println("Volume: " + volume);
     }
 }
